@@ -1,0 +1,8 @@
+TASKS:
+
+DONE 1. Create all database tables
+DONE 2. Create table insert functions
+3. Insert all table data
+4. Create new interface
+5. Create interface data handeler
+6. Create statistics view
