@@ -1,8 +1,23 @@
-TASKS:
+TODO:
+1. Research application layers/frameworks to figure out how to properly 
+    connect the Database class to a ViewModel and the ViewModel to the UI 
+    
+    https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
+    https://codelabs.developers.google.com/codelabs/android-room-with-a-view/#1
 
-DONE 1. Create all database tables
-DONE 2. Create table insert functions
-3. Insert all table data
-4. Create new interface
-5. Create interface data handeler
-6. Create statistics view
+2. Implement a ViewModel for processing/handling data between the UI and Database
+    ** I think the ViewModel can utilize the Statistics class to perform data calculations.
+    **      then use the calculations and the ViewModel to send data to the class responsible
+    **      for handling graphical display of the data. 
+3. Create a new UI (View).
+4. Implement the Statistics model.
+6. Enter Data and Test
+
+** View (GUI) <--> View Model (Data processing) <--> Model (Data storage) ** 
+
+UPDATE: September 16/2020
+    - CREATED a Database class implementing the Singleton design pattern.
+    - CREATED generic SQL functions for parsing INSERT and UPDATE functions. 
+    - REMOVED sql_commands.py as it became redundant. (Replaced by Database class)
+    - RENAMED habit_tracker_gui.py to view_gui.py 
+    - RENAMED data_handler.py to view_model.py

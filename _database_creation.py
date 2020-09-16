@@ -156,7 +156,7 @@ def main():
 
     db = r"/home/mitchell/Desktop/CODE/habittracker/habittracker.db"
     
-    # _create_all_tables(db)
+    _create_all_tables(db)
 
 if __name__ == '__main__':
     main()
